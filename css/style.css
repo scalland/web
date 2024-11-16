@@ -78,3 +78,20 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
+.custom-hr {
+    border: none; /* Remove default border */
+    /* border-bottom: 2px solid #0078D4; /* Add underline with the desired color */
+    height: 2px;
+    background-color: #0078D4;
+    width: 50%; /* Default width */
+    max-width: 600px; /* Maximum length */
+    min-width: 200px; /* Minimum length */
+    margin: 20px auto; /* Center the line */
+}
+
+.custom-underline {
+    text-decoration-color: #0078D4; /* Change underline color */
+    /* text-decoration-thickness: 2px; /* Optional: Adjust thickness */
+    /* text-underline-offset: 3px; /* Optional: Offset from text */
+}
