@@ -1,59 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="scalland">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="scalland.png"/>
-
-  <title>Scalland</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '1346727141';
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scalland Consultancy Services - 3D Modelling, Branding, Cloud and Application Development Solutions">
+  <title>Salland Consultancy Services - Home</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+<header>
+  <nav>
+    <div class="logo"><img src="assets/images/scalland_final_logo.svg" alt="SCS | Scalland Consultancy Services"></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section id="hero">
+    <h1>Welcome to SCS</h1>
+    <p>We specialize in brand identity, cloud orchestration, and application development.</p>
+    <a href="services.html" class="btn">Explore Services</a>
+  </section>
+  <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <p>"SCS transformed our brand identity!"</p>
+        <span>- Client A</span>
+      </div>
+      <div class="testimonial">
+        <p>"Their cloud solutions are top-notch!"</p>
+        <span>- Client B</span>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2024 SVSKKSMF Consultancy Services</p>
+</footer>
 </body>
 </html>
