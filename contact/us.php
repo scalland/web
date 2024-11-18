@@ -15,6 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Sorry, something went wrong. Please try again later.";
     }
 } else {
-    header("Location: contact.html");
+    header("Location: index.html");
     exit();
 }
