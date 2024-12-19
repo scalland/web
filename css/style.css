@@ -5,28 +5,70 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
+    margin: 0; /* Remove default margins */
     color: #333;
+    height: 100%; /* Full height of the viewport */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Wrapper for main content */
+main {
+    flex: 1; /* This ensures the main content stretches to fill available space */
 }
 
 header {
     background: #0078D4;
     color: #fff;
     padding: 1rem 0;
-    text-align: center;
+    text-align: left;
+}
+
+header nav {
+    display: table;
+}
+
+header div .nav-row {
+    display: table-row;
+}
+
+header div .nav-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header div .logo {
+    display: flex; /* Ensures the logo behaves like an inline element */
+    text-align: left; /* Centers the logo text or image if needed */
+    margin: 0 0 10px; /* Adds spacing around the logo */
+    max-width: 300px; /* Adjusts the maximum width of the logo image */
+}
+
+header div .logo img {
+    width: 100%; /* Ensures the image scales within its container */
+    height: auto; /* Maintains aspect ratio */
+    text-align: left;
+}
+
+header div .logo h1 {
+    font-size: 24px; /* Logo text size (if text is used instead of an image) */
+    color: #0078D4; /* Matches the theme color */
+    font-weight: bold; /* Makes the logo text stand out */
+    margin: 0; /* Removes unwanted margin around the text */
 }
 
 header .nav-links {
-    display: flex;
+    display: table-cell;
     justify-content: center;
     list-style: none;
-    margin: 1rem 0;
+    margin: -1rem 0;
 }
 
 header .nav-links li {
+    display: inline-flex;
     margin: 0 1rem;
 }
 
@@ -35,6 +77,19 @@ header .nav-links a {
     text-decoration: none;
     font-weight: bold;
 }
+
+header .nav-links a.currentpage {
+    color: #fff;
+    text-decoration: overline;
+    font-weight: bold;
+}
+
+header .nav-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 
 #hero {
     background: #f4f4f4;
@@ -59,6 +114,45 @@ header .nav-links a {
     border-radius: 5px;
 }
 
+/* Masonry Container */
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Responsive masonry grid */
+    gap: 20px; /* Space between cards */
+    padding: 10px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    border-top-color: #0078D4;
+    border-top-width: 3px;
+    border-top-style: solid;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.card h2 {
+    color: #0078D4;
+    margin-top: 0;
+    margin-bottom: 10px;
+    /*border-bottom: 1px solid #0078D4;*/
+    width: 100%; /* Ensures full width */
+    display: block; /* Forces the header to behave like a block element */
+    background-color: #e6f4ff; /* Optional: Add a background color for emphasis */
+    padding: 10px; /* Optional: Add padding for spacing */
+    box-sizing: border-box; /* Ensures padding is included in the element's width */
+}
+
+.card p {
+    margin: 10px 0 0;
+    color: #333;
+}
+
+
+
 #testimonials {
     background: #f4f4f4;
     padding: 2rem;
@@ -77,6 +171,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+    position: relative;
 }
 
 .custom-hr {

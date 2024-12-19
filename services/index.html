@@ -10,37 +10,46 @@
 <body>
 <header>
     <nav>
-        <div class="logo"><img src="/assets/images/scalland_final_logo.svg" alt="SCS | Scalland Consultancy Services"></div>
-        <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
+        <div class="nav-row">
+            <div class="nav-cell">
+                <div class="logo">
+                    <img src="/assets/images/scalland_final_logo.svg" alt="SCS | Scalland Consultancy Services">
+                </div>
+            </div>
+            <div class="nav-cell">
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a class="currentpage" href="/services">Services</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 <main id="hero">
     <section id="services">
-        <h1>Our Services</h1>
-        <div class="service-item">
-            <h2>Brand Identity & Design</h2>
-            <p>We create captivating brand visuals, including logos, 3D animations, and cohesive design themes, to help your brand stand out.</p>
-        </div>
-        <div class="service-item">
-            <h2>Cloud Orchestration & Development</h2>
-            <p>Specializing in AWS, Azure, and GCP, we help businesses migrate to the cloud, optimize performance, and ensure seamless operations.</p>
-        </div>
-        <div class="service-item">
-            <h2>Website Development</h2>
-            <p>Our team builds responsive, user-friendly websites tailored to your business needs and brand identity.</p>
-        </div>
-        <div class="service-item">
-            <h2>Mobile App Development</h2>
-            <p>We develop feature-rich mobile apps for iOS and Android, providing a smooth user experience and robust functionality.</p>
-        </div>
-        <div class="service-item">
-            <h2>Backup & Disaster Recovery</h2>
-            <p>Protect your data and business continuity with our backup strategies and disaster recovery solutions.</p>
+        <div class="masonry">
+            <div class="card">
+                <h2>Brand Identity & Design</h2>
+                <p>We create compelling and cohesive brand visuals using 3D modeling and animation.</p>
+            </div>
+            <div class="card">
+                <h2>Cloud Orchestration & Development</h2>
+                <p>Specializing in AWS, Azure, and GCP, we offer cloud infrastructure solutions tailored to your needs.</p>
+            </div>
+            <div class="card">
+                <h2>Website Development</h2>
+                <p>Designing and developing responsive, high-performance websites for all business types.</p>
+            </div>
+            <div class="card">
+                <h2>Mobile App Development</h2>
+                <p>We build feature-rich mobile applications for iOS and Android platforms.</p>
+            </div>
+            <div class="card">
+                <h2>Backup & Disaster Recovery</h2>
+                <p>Ensuring your data is safe with robust backup strategies and disaster recovery solutions.</p>
+            </div>
         </div>
     </section>
 </main>
