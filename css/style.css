@@ -190,3 +190,20 @@ footer {
     /* text-decoration-thickness: 2px; /* Optional: Adjust thickness */
     /* text-underline-offset: 3px; /* Optional: Offset from text */
 }
+
+#hero #about {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero #about p {
+    text-align: center;
+}
+
+#hero #about ul {
+    list-style: none;
+}
+
+#hero #about ul li {
+    text-align: left;
+}
