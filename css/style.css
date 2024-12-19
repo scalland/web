@@ -76,20 +76,36 @@ header .nav-links a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    padding: 6px;
 }
 
 header .nav-links a.currentpage {
     color: #fff;
     text-decoration: overline;
     font-weight: bold;
+    font-variant: small-caps;
+    border-radius: 6px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #00355c;
+    padding: 6px;
+    color: #00ebff;
 }
 
 header .nav-links a:hover {
-    color: #fff;
     text-decoration: underline;
     font-weight: bold;
+    font-variant: small-caps;
+    border-radius: 6px;
+    /*border-top-color: #fff;
+    border-top-width: 3px;
+    border-top-style: solid;*/
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #00355c;
+    padding: 6px;
+    color: #00ebff;
 }
-
 
 #hero {
     background: #f4f4f4;
@@ -130,6 +146,17 @@ header .nav-links a:hover {
     border-top-width: 3px;
     border-top-style: solid;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.card:hover {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    border-top-color: #0078D4;
+    border-top-width: 3px;
+    border-top-style: solid;
+    box-shadow: 8px 16px 24px rgba(0, 0, 0, 0.1);
     padding: 20px;
     overflow: hidden;
 }
