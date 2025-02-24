@@ -269,7 +269,7 @@ footer {
     text-align: justify;
 }
 
-#hero #privacy .address-block {
+#hero section .address-block {
     font-style: normal;
     background-color: #f9f9f9;
     padding: 20px;
@@ -282,7 +282,11 @@ footer {
     font-size: 16px;
 }
 
-#hero #privacy .address-block strong {
+#hero section .address-block strong {
     font-size: 18px;
     color: #0078D4;
+}
+
+#hero section div ul {
+    margin-left: 1.5rem;
 }
