@@ -32,33 +32,33 @@
 </head>
 <body class="bg-background text-on-background antialiased pt-20">
 <!-- TopNavBar Component -->
-<header class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-sm fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
+<header class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-md border-b border-outline-variant/10 fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
 <div class="flex items-center gap-xl">
 <a class="flex items-center gap-sm" href="index.html">
 <img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo.svg"/>
 <img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo_dark.svg"/>
 <span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-inverse-primary hidden">Scalland</span>
 </a>
-<nav class="hidden md:flex items-center gap-lg">
-<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high/10 px-sm py-xs rounded-DEFAULT" href="index.html">Home</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high/10 px-sm py-xs rounded-DEFAULT" href="services.html">Services</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high/10 px-sm py-xs rounded-DEFAULT" href="aboutus.html">About Us</a>
-<a class="font-label-lg text-label-lg text-secondary dark:text-secondary-fixed border-b-2 border-secondary dark:border-secondary-fixed pb-1 px-sm pt-xs scale-95 duration-100 ease-in-out" href="contactus.html">Contact</a>
+<nav class="hidden md:flex items-center gap-sm bg-surface-container-low/50 border border-outline-variant/20 rounded-full p-1 backdrop-blur-md">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="index.html">Home</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="services.html">Services</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="aboutus.html">About Us</a>
+<a class="font-label-lg text-label-lg bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-semibold shadow-sm transition-all duration-200" href="contactus.html">Contact</a>
 </nav>
 </div>
 <div class="flex items-center gap-md">
-<div class="hidden md:flex items-center gap-base text-on-surface-variant dark:text-surface-variant">
-<button id="theme-toggle" class="p-xs hover:bg-surface-container-low dark:hover:bg-surface-container-high/10 rounded-full transition-all hover:scale-95 duration-100 ease-in-out flex items-center justify-center w-10 h-10">
+<div class="hidden md:flex items-center gap-2 text-on-surface-variant">
+<button id="theme-toggle" class="p-2 hover:bg-surface-container-highest hover:text-primary rounded-full transition-all duration-200 flex items-center justify-center w-10 h-10">
 <span class="material-symbols-outlined" id="theme-icon">dark_mode</span>
 </button>
-<button class="p-xs hover:bg-surface-container-low dark:hover:bg-surface-container-high/10 rounded-full transition-all hover:scale-95 duration-100 ease-in-out flex items-center justify-center w-10 h-10">
+<button class="p-2 hover:bg-surface-container-highest hover:text-primary rounded-full transition-all duration-200 flex items-center justify-center w-10 h-10">
 <span class="material-symbols-outlined" data-icon="settings">settings</span>
 </button>
-<button class="p-xs hover:bg-surface-container-low dark:hover:bg-surface-container-high/10 rounded-full transition-all hover:scale-95 duration-100 ease-in-out flex items-center justify-center w-10 h-10">
+<button class="p-2 hover:bg-surface-container-highest hover:text-primary rounded-full transition-all duration-200 flex items-center justify-center w-10 h-10">
 <span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
 </button>
 </div>
-<button class="bg-primary-container dark:bg-inverse-primary text-white dark:text-on-primary-container hover:bg-on-primary-fixed-variant transition-all font-label-lg text-label-lg px-lg py-sm rounded-DEFAULT shadow-sm" onclick="window.location.href='login.html'">
+<button class="bg-primary text-on-primary hover:opacity-90 transition-all font-label-lg text-label-lg px-lg py-sm rounded-DEFAULT shadow-sm" onclick="window.location.href='login.html'">
 Login
 </button>
 </div>
@@ -122,29 +122,29 @@ Login
 <div class="flex items-start gap-sm">
 <span class="material-symbols-outlined text-secondary mt-1">location_on</span>
 <div>
-<p class="font-body-md text-body-md text-on-surface">100 Innovation Boulevard</p>
-<p class="font-body-md text-body-md text-on-surface-variant">Suite 400</p>
-<p class="font-body-md text-body-md text-on-surface-variant">New York, NY 10001</p>
+<p class="font-body-md text-body-md text-on-surface">Scalland Consultancy Services</p>
+<p class="font-body-md text-body-md text-on-surface-variant">A106, MC Sarovar, Medahalli, KR Puram,</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Bangalore - 560049</p>
 </div>
 </div>
 <div class="flex items-center gap-sm mt-md">
 <span class="material-symbols-outlined text-secondary">mail</span>
-<a class="font-body-md text-body-md text-on-surface hover:text-secondary transition-colors" href="mailto:contact@scalland.com">contact@scalland.com</a>
+<a class="font-body-md text-body-md text-on-surface hover:text-secondary transition-colors" href="mailto:hello@scalland.com">hello@scalland.com</a>
 </div>
-<div class="flex items-center gap-sm mt-sm">
-<span class="material-symbols-outlined text-secondary">call</span>
-<p class="font-body-md text-body-md text-on-surface">+1 (555) 019-2024</p>
+
 </div>
 </div>
+<!-- Global Connectivity Visualization -->
+<div class="bg-primary-container rounded-lg h-64 w-full relative overflow-hidden enterprise-shadow group">
+<img alt="Global Digital Connectivity Network" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 ease-in-out" src="./assets/images/global_connectivity.png"/>
+<!-- Overlay Content -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/40 to-transparent flex flex-col justify-end p-lg">
+<div class="flex items-center gap-sm mb-xs">
+<span class="material-symbols-outlined text-secondary">public</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Global Reach</span>
 </div>
-<!-- Map Placeholder -->
-<div class="bg-surface-container-high rounded-lg h-64 w-full relative overflow-hidden enterprise-shadow">
-<img alt="Map" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-luminosity" data-alt="A stylized, modern high-contrast map interface showing the streets of Manhattan, New York. The map uses a sophisticated color palette of deep navy blues, pristine whites, and soft grays, aligning with a premium corporate aesthetic. Subtle electric blue accents highlight key thoroughfares or specific location markers. The overall mood is sleek, professional, and digital-first, suitable for a high-end enterprise consultancy contact page." data-location="New York" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRLie2wx4zT-O_6UiWS77-sA0JNz-R5z0s3hmbhkw4giPF0F9EVgp9NPC0uukFdagCD_5-hUp_fL6HfZ_ugQtKPrKtPXZXHlYuWAMkXQPTKEi2gnb7TyMUTD_Iyim5XBEMV5Hzl8UBr-W4UclsR4V6zcYbrTIKPoPF5Inv2WdimDTkilzyxpqMDmh_4yVUNInorueA2Sh8mWh8VgpTklcfxaqIx-YoY4zBaaTm_MclVyFxMNTCEmey9Z_z-w9PdItksDaXFULhHB0"/>
-<!-- Glass overlay marker -->
-<div class="absolute inset-0 flex items-center justify-center">
-<div class="glass-effect rounded-full p-3 shadow-lg border border-white/20 flex items-center justify-center">
-<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
-</div>
+<h4 class="font-headline-md text-headline-md text-white">Architecting the Future</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim max-w-sm mt-xs">Connecting enterprises worldwide through digital excellence.</p>
 </div>
 </div>
 </div>

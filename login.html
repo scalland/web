@@ -18,9 +18,10 @@
 </script>
 <style>
         .glass-panel {
-            background: rgba(255, 255, 255, 0.85);
+            background-color: color-mix(in srgb, var(--color-surface-container-lowest) 80%, transparent);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
+            border: 1px solid color-mix(in srgb, var(--color-outline-variant) 20%, transparent);
         }
         .level-1-shadow {
             box-shadow: 0 4px 16px rgba(10, 25, 47, 0.06);
@@ -28,11 +29,36 @@
       </style>
 <style data-stitch-cursor=""></style><style data-stitch-scroll-lock=""></style></head>
 <body class="bg-background min-h-screen flex items-center justify-center p-margin-mobile md:p-margin-desktop relative overflow-hidden text-on-background">
-<!-- Ambient background gradient -->
-<!-- Theme Toggle -->
-<button id="theme-toggle" class="absolute top-4 right-4 p-2 text-on-surface-variant hover:text-primary hover:bg-surface-container-low rounded-full transition-all z-20">
-    <span class="material-symbols-outlined" id="theme-icon">dark_mode</span>
+<!-- TopNavBar Component -->
+<header class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-md border-b border-outline-variant/10 fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
+<div class="flex items-center gap-xl">
+<a class="flex items-center gap-sm" href="index.html">
+<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo_dark.svg"/>
+<span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-inverse-primary hidden">Scalland</span>
+</a>
+<nav class="hidden md:flex items-center gap-sm bg-surface-container-low/50 border border-outline-variant/20 rounded-full p-1 backdrop-blur-md">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="index.html">Home</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="services.html">Services</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="aboutus.html">About Us</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="contactus.html">Contact</a>
+</nav>
+</div>
+<div class="flex items-center gap-md">
+<div class="hidden md:flex items-center gap-2 text-on-surface-variant">
+<button id="theme-toggle" class="p-2 hover:bg-surface-container-highest hover:text-primary rounded-full transition-all duration-200 flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined" id="theme-icon">dark_mode</span>
 </button>
+<button class="p-2 hover:bg-surface-container-highest hover:text-primary rounded-full transition-all duration-200 flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+<button class="p-2 hover:bg-surface-container-highest hover:text-primary rounded-full transition-all duration-200 flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Ambient background gradient -->
 
 <div class="absolute inset-0 bg-gradient-to-br from-surface to-surface-variant opacity-50 z-0"></div>
 <div class="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-secondary/5 blur-[120px] z-0 pointer-events-none"></div>
@@ -73,7 +99,7 @@
 <input class="w-12 h-14 text-center rounded border border-outline-variant bg-surface-container-lowest font-headline-md text-headline-md text-on-surface focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-colors" maxlength="1" placeholder="·" type="text"/>
 </div>
 </div>
-<button class="mt-sm w-full bg-primary-container text-white py-sm px-md rounded font-label-lg text-label-lg hover:bg-primary-container/90 transition-colors flex items-center justify-center gap-sm" type="button" onclick="window.location.href='dashboard.html'">
+<button class="mt-sm w-full bg-primary text-on-primary py-sm px-md rounded font-label-lg text-label-lg hover:opacity-90 transition-colors flex items-center justify-center gap-sm" type="button" onclick="window.location.href='dashboard.html'">
 <span class="">Send OTP</span>
 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </button>
