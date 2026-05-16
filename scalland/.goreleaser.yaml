@@ -1,0 +1,26 @@
+project_name: 
+before:
+  hooks:
+    - go mod tidy
+builds:
+  - main: .
+    binary: 
+    ldflags:
+      - -s -w
+      - -X main.Version={{ .Version }}
+      - -X main.GitCommit={{ .Commit }}
+      - -X main.GitBranch={{ .Branch }}
+      - -X main.BuildDate={{ .Date }}
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm64
+archives:
+  - format: tar.gz
+checksum:
+  name_template: checksums.txt
+release:
+  github:
+    owner: OWNER
+    name: 
