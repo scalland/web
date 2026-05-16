@@ -1,2 +1,23 @@
-.idea
-.idea/*
+# Binaries
+bin/
+dist/
+*.exe
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Go
+vendor/
+*.test
+
+# App
+storage/
+*.log
+configs/app.local.yml

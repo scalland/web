@@ -1,0 +1,175 @@
+{{define "body_classes"}}bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col pt-20{{end}}
+{{define "header_block"}}{{template "navbar" .}}{{end}}
+{{define "content"}}
+<main class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop w-full overflow-hidden flex-grow">
+        <!-- Hero Section -->
+        <section class="py-xl md:py-[120px] relative">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+                <div class="md:col-span-7 z-10 flex flex-col gap-md">
+                    <div
+                        class="inline-flex items-center gap-xs text-secondary font-label-lg text-label-lg bg-secondary-fixed/30 px-sm py-xs rounded-full w-max border border-secondary-fixed">
+                        <span class="material-symbols-outlined text-sm">rocket_launch</span>
+                        Enterprise Capabilities
+                    </div>
+                    <h1
+                        class="font-display-lg-mobile md:font-display-lg text-primary text-display-lg-mobile md:text-display-lg tracking-tight">
+                        Architecting <span class="text-secondary">Digital</span> Excellence.
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        Scalland delivers robust, scalable solutions tailored for high-stakes enterprise environments.
+                        We bridge the gap between visionary strategy and technical execution across cloud
+                        infrastructure, application development, and brand presence.
+                    </p>
+                </div>
+                <div class="md:col-span-5 relative h-[400px] md:h-[600px] rounded-xl overflow-hidden ambient-shadow-md">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-primary-container to-secondary-container opacity-20 z-10">
+                    </div>
+                    <img alt="Abstract digital network visualization" class="w-full h-full object-cover"
+                        data-alt="A highly complex digital network visualization rendered in high resolution. The image features a web of glowing white and electric blue nodes connected by thin, luminous lines over a deep navy background. The aesthetic is extremely modern, corporate, and abstract, symbolizing data flow, cloud orchestration, and high-tech infrastructure in a premium enterprise context."
+                        src="./static/img/services_img_1.jpg" />
+                </div>
+            </div>
+        </section>
+        <!-- Service 1: Cloud Orchestration (Bento Grid Style) -->
+        <section class="py-xl relative">
+            <div class="flex flex-col gap-md mb-lg text-center max-w-3xl mx-auto">
+                <h2 class="font-headline-lg text-headline-lg text-primary">Cloud Orchestration</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">Seamless integration, dynamic scalability,
+                    and uncompromising security. We architect cloud environments that serve as the resilient backbone of
+                    your enterprise operations.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-[240px]">
+                <!-- Main Feature Card -->
+                <div
+                    class="md:col-span-8 row-span-2 glass-panel rounded-xl p-lg flex flex-col justify-between relative overflow-hidden bg-surface-container-lowest border-t-4 border-t-secondary">
+                    <div class="z-10 flex flex-col gap-sm max-w-lg">
+                        <span class="material-symbols-outlined text-secondary"
+                            style="font-size: 48px; font-variation-settings: 'FILL' 1;">cloud_sync</span>
+                        <h3 class="font-headline-md text-headline-md text-primary mt-sm">Distributed Systems
+                            Architecture</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">We design multi-cloud and hybrid
+                            environments that eliminate single points of failure. Our orchestration strategies ensure
+                            your data is accessible, secure, and geographically optimized for performance.</p>
+                    </div>
+                    <div
+                        class="absolute -bottom-20 -right-20 w-[400px] h-[400px] bg-secondary-fixed/40 rounded-full blur-3xl -z-0">
+                    </div>
+                </div>
+                <!-- Secondary Metric Card 1 -->
+                <div
+                    class="md:col-span-4 row-span-1 glass-panel rounded-xl p-md flex flex-col justify-center items-start gap-sm bg-primary-container text-on-primary">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">security</span>
+                    <h4 class="font-headline-md text-headline-md">Zero-Trust Security</h4>
+                    <p class="font-body-sm text-body-sm text-on-primary/80">Identity-first perimeter defense mapped to
+                        every endpoint.</p>
+                </div>
+                <!-- Secondary Metric Card 2 -->
+                <div
+                    class="md:col-span-4 row-span-1 glass-panel rounded-xl p-md flex flex-col justify-center items-start gap-sm">
+                    <span class="material-symbols-outlined text-secondary"
+                        style="font-variation-settings: 'FILL' 1;">speed</span>
+                    <h4 class="font-headline-md text-headline-md text-primary">Auto-Scaling</h4>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Dynamic resource allocation responding
+                        to real-time traffic anomalies.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Service 2: Application Development (Asymmetric Layout) -->
+        <section class="py-xl">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+                <div
+                    class="md:col-span-6 relative h-[500px] rounded-xl overflow-hidden ambient-shadow-md hidden md:block">
+                    <img alt="Data dashboard interface" class="w-full h-full object-cover"
+                        data-alt="A close-up, angled view of a sophisticated software dashboard displayed on a high-resolution monitor. The interface features sleek charts, data tables, and metrics utilizing a modern color palette of deep navy, clean white, and vibrant electric blue accents. The lighting is soft and professional, emphasizing the precision and high-end nature of the enterprise application design."
+                        src="./static/img/services_img_2.jpg" />
+                </div>
+                <div class="md:col-span-6 flex flex-col gap-lg md:pl-lg">
+                    <div class="flex flex-col gap-sm">
+                        <div class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center mb-sm">
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings: 'FILL' 1;">terminal</span>
+                        </div>
+                        <h2 class="font-headline-lg text-headline-lg text-primary">Application Development</h2>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant">Building high-performance,
+                            intuitive software ecosystems. From complex enterprise tools to engaging customer portals,
+                            our engineering process prioritizes maintainability and user experience.</p>
+                    </div>
+                    <div class="flex flex-col gap-md">
+                        <div class="flex items-start gap-md">
+                            <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+                            <div>
+                                <h4 class="font-headline-md text-headline-md text-primary text-[18px]">Microservices
+                                    Architecture</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">Decoupled systems that
+                                    allow for independent scaling, rapid deployment cycles, and isolated fault
+                                    tolerance.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-md">
+                            <span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+                            <div>
+                                <h4 class="font-headline-md text-headline-md text-primary text-[18px]">Continuous
+                                    Integration (CI/CD)</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">Automated testing and
+                                    deployment pipelines to ensure rapid, reliable feature delivery without downtime.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service 3: Digital Brand Strategy (Cards Layout) -->
+        <section class="py-xl bg-surface-container-low rounded-3xl px-md md:px-xl my-xl">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+                <div class="max-w-2xl">
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Digital Brand Strategy</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Technology is only half the equation.
+                        We align your digital infrastructure with a cohesive, authoritative brand presence that
+                        resonates in a competitive market.</p>
+                </div>
+                <button
+                    class="font-label-lg text-label-lg text-secondary border-2 border-secondary px-lg py-sm rounded-lg hover:bg-secondary hover:text-on-secondary transition-colors whitespace-nowrap">
+                    View Case Studies
+                </button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <!-- Strategy Card 1 -->
+                <div
+                    class="bg-surface-container-lowest p-lg rounded-xl ambient-shadow-sm flex flex-col gap-md border-t border-outline-variant/20 hover:border-secondary transition-colors duration-300">
+                    <div
+                        class="w-10 h-10 rounded bg-primary-container text-on-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[20px]">architecture</span>
+                    </div>
+                    <h4 class="font-headline-md text-headline-md text-primary">Identity Architecture</h4>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Constructing a visual and semantic
+                        framework that clearly communicates your technical authority and market position.</p>
+                </div>
+                <!-- Strategy Card 2 -->
+                <div
+                    class="bg-surface-container-lowest p-lg rounded-xl ambient-shadow-sm flex flex-col gap-md border-t border-outline-variant/20 hover:border-secondary transition-colors duration-300">
+                    <div
+                        class="w-10 h-10 rounded bg-primary-container text-on-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[20px]">insights</span>
+                    </div>
+                    <h4 class="font-headline-md text-headline-md text-primary">Data-Driven Positioning</h4>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Utilizing market analytics to identify
+                        whitespace opportunities and position your solutions precisely where demand exists.</p>
+                </div>
+                <!-- Strategy Card 3 -->
+                <div
+                    class="bg-surface-container-lowest p-lg rounded-xl ambient-shadow-sm flex flex-col gap-md border-t border-outline-variant/20 hover:border-secondary transition-colors duration-300">
+                    <div
+                        class="w-10 h-10 rounded bg-primary-container text-on-primary flex items-center justify-center">
+                        <span class="material-symbols-outlined text-[20px]">campaign</span>
+                    </div>
+                    <h4 class="font-headline-md text-headline-md text-primary">Multi-Channel Cohesion</h4>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Ensuring a consistent, premium
+                        experience across all digital touchpoints, from application interfaces to external
+                        communications.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+{{end}}

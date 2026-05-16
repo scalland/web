@@ -1,0 +1,47 @@
+{{define "scripts"}}
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    if (themeToggleBtn && themeIcon) {
+        if (document.documentElement.classList.contains('dark')) {
+            themeIcon.textContent = 'light_mode';
+        } else {
+            themeIcon.textContent = 'dark_mode';
+        }
+        themeToggleBtn.addEventListener('click', function() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+                themeIcon.textContent = 'dark_mode';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+                themeIcon.textContent = 'light_mode';
+            }
+        });
+    }
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if(mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+            icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+    }
+    const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+    if(mobileThemeToggle) {
+        mobileThemeToggle.addEventListener('click', () => {
+            const themeBtn = document.getElementById('theme-toggle');
+            if(themeBtn) themeBtn.click();
+            const icon = mobileThemeToggle.querySelector('.material-symbols-outlined');
+            icon.textContent = document.documentElement.classList.contains('dark') ? 'light_mode' : 'dark_mode';
+        });
+    }
+});
+</script>
+{{end}}

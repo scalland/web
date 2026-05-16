@@ -1,0 +1,62 @@
+{{define "navbar"}}
+<!-- TopNavBar Component -->
+<header class="bg-surface/80 backdrop-blur-md shadow-md dark:shadow-[0_4px_20px_rgba(0,0,0,0.6)] border-b border-outline-variant/10 dark:border-white/5 dark:border-transparent fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
+<div class="flex items-center gap-xl h-full">
+<a class="flex items-center gap-sm" href="/">
+<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo_dark.svg"/>
+<span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-inverse-primary hidden">Scalland</span>
+</a>
+<nav class="hidden md:flex items-center h-full border-r border-outline-variant/20 dark:border-white/5">
+    <a class="font-label-lg text-label-lg h-full flex items-center px-6 border-l border-transparent focus:outline-none {{if eq .CurrentPage "home"}}bg-gradient-to-b from-[#0A192F] to-[#003B5C] text-white font-semibold{{else}}text-on-surface-variant hover:text-primary hover:bg-surface-container-low{{end}} transition-colors" href="/">Home</a>
+    <a class="font-label-lg text-label-lg h-full flex items-center px-6 border-l border-outline-variant/20 dark:border-white/5 border-b-2 border-transparent focus:outline-none {{if eq .CurrentPage "services"}}bg-gradient-to-b from-[#0A192F] to-[#003B5C] text-white font-semibold{{else}}text-on-surface-variant hover:text-primary hover:bg-surface-container-low{{end}} transition-colors" href="/services">Services</a>
+    <a class="font-label-lg text-label-lg h-full flex items-center px-6 border-l border-outline-variant/20 dark:border-white/5 border-b-2 border-transparent focus:outline-none {{if eq .CurrentPage "about"}}bg-gradient-to-b from-[#0A192F] to-[#003B5C] text-white font-semibold{{else}}text-on-surface-variant hover:text-primary hover:bg-surface-container-low{{end}} transition-colors" href="/aboutus">About Us</a>
+    <a class="font-label-lg text-label-lg h-full flex items-center px-6 border-l border-outline-variant/20 dark:border-white/5 border-b-2 border-transparent focus:outline-none {{if eq .CurrentPage "contact"}}bg-gradient-to-b from-[#0A192F] to-[#003B5C] text-white font-semibold{{else}}text-on-surface-variant hover:text-primary hover:bg-surface-container-low{{end}} transition-colors" href="/contactus">Contact</a>
+</nav>
+</div>
+<div class="flex items-center gap-md">
+<div class="hidden md:flex items-center gap-2 text-on-surface-variant">
+<button id="theme-toggle" class="p-2 hover:bg-surface-container-highest hover:text-primary rounded-full transition-all duration-200 flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined" id="theme-icon">dark_mode</span>
+</button>
+<button class="p-2 hover:bg-surface-container-highest hover:text-primary rounded-full transition-all duration-200 flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+<button class="p-2 hover:bg-surface-container-highest hover:text-primary rounded-full transition-all duration-200 flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+<button class="hidden md:block bg-surface-container-highest dark:bg-white/5 text-primary hover:opacity-90 transition-all font-label-lg text-label-lg px-lg py-sm rounded-DEFAULT shadow-sm" onclick="window.location.href='/login'">
+Login
+</button>
+<button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface-variant hover:text-primary rounded-full transition-all flex items-center justify-center">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden fixed top-20 left-0 w-full bg-surface border-b border-outline-variant/10 dark:border-white/5 z-40 shadow-md flex flex-col">
+<nav class="flex flex-col">
+    <a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 {{if eq .CurrentPage "home"}}text-white bg-gradient-to-r from-[#0A192F] to-[#003B5C] font-semibold{{else}}text-on-surface-variant hover:text-primary font-semibold{{end}}" href="/">Home</a>
+    <a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 {{if eq .CurrentPage "services"}}text-white bg-gradient-to-r from-[#0A192F] to-[#003B5C] font-semibold{{else}}text-on-surface-variant hover:text-primary font-semibold{{end}}" href="/services">Services</a>
+    <a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 {{if eq .CurrentPage "about"}}text-white bg-gradient-to-r from-[#0A192F] to-[#003B5C] font-semibold{{else}}text-on-surface-variant hover:text-primary font-semibold{{end}}" href="/aboutus">About Us</a>
+    <a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 {{if eq .CurrentPage "contact"}}text-white bg-gradient-to-r from-[#0A192F] to-[#003B5C] font-semibold{{else}}text-on-surface-variant hover:text-primary font-semibold{{end}}" href="/contactus">Contact</a>
+</nav>
+<div class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5">
+<button class="w-full bg-surface-container-highest dark:bg-white/5 text-primary hover:opacity-90 transition-all font-label-lg text-label-lg py-sm rounded-DEFAULT shadow-sm" onclick="window.location.href='/login'">
+Login
+</button>
+</div>
+<div class="flex items-center gap-4 p-margin-mobile">
+<button id="mobile-theme-toggle" class="p-2 bg-surface-container-highest dark:bg-white/5 text-primary rounded-full flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+<button class="p-2 bg-surface-container-highest dark:bg-white/5 text-primary rounded-full flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="p-2 bg-surface-container-highest dark:bg-white/5 text-primary rounded-full flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+{{end}}

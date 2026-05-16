@@ -1,0 +1,137 @@
+{{define "body_classes"}}bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container{{end}}
+{{define "header_block"}}{{template "navbar" .}}{{end}}
+{{define "content"}}
+<main class="pt-32 pb-xl">
+<!-- Hero Section -->
+<section class="max-w-[1440px] mx-auto px-margin-desktop mb-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center min-h-[614px]">
+<div class="lg:col-span-5 flex flex-col gap-md z-10">
+<span class="font-label-lg text-label-lg text-secondary uppercase tracking-widest">Our Mission</span>
+<h1 class="font-display-lg text-display-lg text-primary">
+                        Your Trusted Partner in Enterprise Transformation.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        We bridge the gap between legacy stability and digital agility. Scalland architects robust, future-proof strategies that drive meaningful change in high-stakes environments.
+                    </p>
+</div>
+<div class="lg:col-span-7 relative">
+<div class="absolute inset-0 bg-gradient-to-tr from-surface to-transparent z-10"></div>
+<img class="w-full h-[600px] object-cover rounded-xl shadow-lg" data-alt="A striking, high-contrast photograph of a modern glass skyscraper reflecting a bright, cloudless sky. The architecture implies stability and forward momentum, aligning with a corporate consultancy aesthetic. The lighting is crisp and natural, emphasizing the pristine white and deep navy tones of the building's facade. Subtle electric blue reflections hint at technological innovation." src="./static/img/about_hero.jpg"/>
+</div>
+</div>
+</section>
+<!-- Core Values Bento Grid -->
+<section class="max-w-[1440px] mx-auto px-margin-desktop py-xl bg-surface-container-low rounded-xl mb-xl">
+<div class="mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-xs">Core Tenets</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">The principles that guide our analytical approach.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Value Card 1 -->
+<div class="bg-surface-container-lowest p-lg rounded-lg shadow-sm border-t-[4px] border-secondary-container flex flex-col gap-sm h-full">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary-container mb-sm">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Architectural Integrity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                        We build systems designed to scale and endure. Our solutions are not temporary fixes, but foundational upgrades for long-term operational excellence.
+                    </p>
+</div>
+<!-- Value Card 2 -->
+<div class="bg-surface-container-lowest p-lg rounded-lg shadow-sm border-t-[4px] border-primary-container dark:border-primary flex flex-col gap-sm h-full">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container dark:text-primary mb-sm">
+<span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Empirical Precision</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                        Every recommendation is anchored in data. We reject assumption in favor of rigorous analysis, ensuring our strategies deliver measurable outcomes.
+                    </p>
+</div>
+<!-- Value Card 3 -->
+<div class="bg-surface-container-lowest p-lg rounded-lg shadow-sm border-t-[4px] border-secondary-container flex flex-col gap-sm h-full">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary-container mb-sm">
+<span class="material-symbols-outlined" data-icon="handshake">handshake</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Trusted Partnership</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                        We integrate deeply with your internal teams. Our success is inextricably linked to yours, fostering a collaborative environment built on transparency.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Corporate History -->
+<section class="max-w-[1440px] mx-auto px-margin-desktop py-xl">
+<div class="bg-primary-container rounded-xl overflow-hidden flex flex-col md:flex-row shadow-lg">
+<div class="md:w-1/2 p-xl flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-widest mb-md">Our Legacy</span>
+<h2 class="font-headline-lg text-headline-lg text-white mb-md">A Decade of Precision Engineering.</h2>
+<p class="font-body-md text-body-md text-on-primary-container mb-lg">
+                        Founded on the premise that large-scale technical deployments require a higher echelon of strategic oversight, Scalland began as an advisory firm for legacy financial institutions. Today, we manage the digital evolution of top-tier enterprises globally, applying our rigorous methodologies to complex modern architectures.
+                    </p>
+<div class="flex items-center gap-sm">
+<span class="w-12 h-[1px] bg-secondary-fixed-dim"></span>
+<span class="font-label-lg text-label-lg text-secondary-fixed-dim">Est. 2014</span>
+</div>
+</div>
+<div class="md:w-1/2 h-[400px] md:h-auto relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sophisticated, well-lit boardroom table featuring blurred figures in deep navy suits engaged in a strategic discussion. The focus is on a sleek, open laptop in the foreground, displaying complex data charts with electric blue highlights. The atmosphere is professional, authoritative, and deeply collaborative, emphasizing trust and enterprise expertise." src="./static/img/about_boardroom.jpg"/>
+<div class="absolute inset-0 bg-primary-container/20 mix-blend-multiply"></div>
+</div>
+</div>
+</section>
+<!-- Team Depth -->
+<section class="max-w-[1440px] mx-auto px-margin-desktop py-xl">
+<div class="flex justify-between items-end mb-lg border-b border-surface-variant pb-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Leadership Depth</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">The architects behind our methodologies.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Team Member 1 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-lg mb-md bg-surface-container-low aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional corporate headshot of a middle-aged male executive in a deep navy suit and crisp white shirt. He exudes confidence and competence. The background is a slightly blurred modern office space with subtle natural lighting. The overall color palette is cool and authoritative, utilizing high-contrast lighting." src="./static/img/about_team_1.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md">
+<span class="material-symbols-outlined text-white" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Jonathan Hayes</h4>
+<p class="font-label-sm text-label-sm text-secondary-container mt-xs">Managing Partner</p>
+</div>
+<!-- Team Member 2 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-lg mb-md bg-surface-container-low aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional corporate headshot of a female executive with a composed, intelligent expression. She is wearing a modern, structured blazer in a neutral tone. The setting is a bright, contemporary corporate environment with soft, high-key lighting. The image conveys sharp intellect and approachability within a high-stakes business context." src="./static/img/about_team_2.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md">
+<span class="material-symbols-outlined text-white" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Elena Rostova</h4>
+<p class="font-label-sm text-label-sm text-secondary-container mt-xs">Head of Systems Architecture</p>
+</div>
+<!-- Team Member 3 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-lg mb-md bg-surface-container-low aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a senior male consultant standing in a modern, glass-walled office. He is dressed sharply in a tailored suit, looking directly at the camera with a reassuring, authoritative gaze. The lighting is crisp and cool, highlighting the polished, high-end corporate aesthetic of the surrounding environment." src="./static/img/about_team_3.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md">
+<span class="material-symbols-outlined text-white" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Marcus Vance</h4>
+<p class="font-label-sm text-label-sm text-secondary-container mt-xs">Director of Operations</p>
+</div>
+<!-- Team Member 4 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-lg mb-md bg-surface-container-low aspect-[3/4] flex items-center justify-center border border-surface-variant">
+<div class="text-center p-md">
+<span class="material-symbols-outlined text-[48px] text-surface-tint mb-sm" data-icon="group_add">group_add</span>
+<h4 class="font-headline-md text-headline-md text-primary">Join the Core</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-xs hover:text-secondary-container transition-colors">View Open Positions</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+{{end}}

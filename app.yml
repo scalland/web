@@ -1,0 +1,61 @@
+App:
+  server_port: "8080"
+  jwt_secret: "Q6e!+80O9inJ{syaKhw!I$5bY(CtDMBR"
+  timezone: "UTC"
+  debug: true
+
+Databases:
+  writer:
+    driver: "mysql"
+    host: "localhost"
+    port: "3306"
+    user: "scalland_user"
+    password: "scalland_user_pass"
+    name: "scalland"
+    timezone: "UTC"
+  reader:
+    driver: "mysql"
+    host: "localhost"
+    port: "3306"
+    user: "scalland_user"
+    password: "scalland_user_pass"
+    name: "scalland"
+    timezone: "UTC"
+  migrator:
+    driver: "mysql"
+    host: "localhost"
+    port: "3306"
+    user: "scalland_migrator"
+    password: "scalland_migrator_pass"
+    name: "scalland"
+    timezone: "UTC"
+
+OTP:
+  length: 6
+  otp_type: "num"
+  valid_till: 120
+
+SMTPs:
+  - name: "default"
+    host: "smtp.gmail.com"
+    port: "587"
+    username: "tech@scalland.com"
+    password: "sktbgfzbighgmane"
+    from: "tech@scalland.com"
+    from_name: "Scalland Enterprise"
+
+Upgrade:
+  enabled: true
+  default_channel: "github"
+  bin_directory: "./bin"
+  preserve_versions: 3
+
+ObjectStorage:
+  default:
+    enabled: false
+    provider: "b2"
+    bucket: "your-bucket"
+    region: "us-west-004"
+    endpoint: "https://s3.us-west-004.backblazeb2.com"
+    access_key: ""
+    secret_key: ""

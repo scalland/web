@@ -1,0 +1,15 @@
+App:
+  server_port: "8080"
+  jwt_secret: "dev-secret"
+  timezone: ""
+  debug: true
+
+Databases:
+  writer:
+    driver: ""
+    host: "localhost"
+    port: "3306"
+    user: "root"
+    password: ""
+    name: "_dev"
+    timezone: "UTC"

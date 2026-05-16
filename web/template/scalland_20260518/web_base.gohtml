@@ -1,0 +1,19 @@
+{{define "base"}}
+<!DOCTYPE html>
+<html class="" lang="en">
+<head>
+    {{template "head" .}}
+</head>
+<body class="{{block "body_classes" .}}bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col pt-20{{end}}">
+    {{block "header_block" .}}{{end}}
+    
+    {{template "content" .}}
+
+    {{block "footer_block" .}}
+        {{template "footer" .}}
+    {{end}}
+
+    {{template "scripts" .}}
+</body>
+</html>
+{{end}}

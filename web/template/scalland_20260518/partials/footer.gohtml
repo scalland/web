@@ -1,0 +1,18 @@
+{{define "footer"}}
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-xl px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-md bg-surface border-t border-outline-variant/20 mt-xl">
+<div class="flex items-center">
+<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo_dark.svg"/>
+<span class="font-headline-md text-headline-md text-primary dark:text-inverse-primary hidden">Scalland</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+            © 2024 Scalland Consultancy Services. All rights reserved.
+        </div>
+<div class="flex gap-md font-label-sm text-label-sm">
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-all" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-all" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-all" href="#">Cookie Policy</a>
+</div>
+</footer>
+{{end}}
