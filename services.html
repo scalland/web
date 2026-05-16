@@ -35,18 +35,18 @@
 
 <body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col pt-20">
 <!-- TopNavBar Component -->
-<header class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-md border-b border-outline-variant/10 fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
-<div class="flex items-center gap-xl">
+<header class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-md dark:shadow-[0_4px_20px_rgba(0,0,0,0.6)] border-b border-outline-variant/10 dark:border-transparent fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
+<div class="flex items-center gap-xl h-full">
 <a class="flex items-center gap-sm" href="index.html">
 <img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo.svg"/>
 <img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo_dark.svg"/>
 <span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-inverse-primary hidden">Scalland</span>
 </a>
-<nav class="hidden md:flex items-center gap-sm bg-surface-container-low/50 border border-outline-variant/20 rounded-full p-1 backdrop-blur-md">
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="index.html">Home</a>
-<a class="font-label-lg text-label-lg bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-semibold shadow-sm transition-all duration-200" href="services.html">Services</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="aboutus.html">About Us</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="contactus.html">Contact</a>
+<nav class="hidden md:flex items-center h-full border-r border-outline-variant/20 dark:border-white/5">
+<a class="font-label-lg text-label-lg h-full flex items-center px-6 border-l border-outline-variant/20 dark:border-white/5 border-b-2 border-transparent focus:outline-none text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="index.html">Home</a>
+<a class="font-label-lg text-label-lg h-full flex items-center px-6 border-l border-transparent focus:outline-none bg-gradient-to-b from-[#0A192F] to-[#003B5C] text-white font-semibold transition-colors" href="services.html">Services</a>
+<a class="font-label-lg text-label-lg h-full flex items-center px-6 border-l border-outline-variant/20 dark:border-white/5 border-b-2 border-transparent focus:outline-none text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="aboutus.html">About Us</a>
+<a class="font-label-lg text-label-lg h-full flex items-center px-6 border-l border-outline-variant/20 dark:border-white/5 border-b-2 border-transparent focus:outline-none text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="contactus.html">Contact</a>
 </nav>
 </div>
 <div class="flex items-center gap-md">
@@ -93,7 +93,7 @@ Login
                     </div>
                     <img alt="Abstract digital network visualization" class="w-full h-full object-cover"
                         data-alt="A highly complex digital network visualization rendered in high resolution. The image features a web of glowing white and electric blue nodes connected by thin, luminous lines over a deep navy background. The aesthetic is extremely modern, corporate, and abstract, symbolizing data flow, cloud orchestration, and high-tech infrastructure in a premium enterprise context."
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAJkWWJ1fUyuDkgvwkDojrr95C8RBo-zqq3M2d7urd2QOcNhZUNPyWZlNY-bQc5R6EFhgX9C2h1slryrl0_oFCkwoLJ0MIE4wxSlamUj5HpfRK_3IXBrfbxqgRxI6B0ekgeHYBD0wnW2S19A6g8bx9PseUcGAK3DTL-eKoK6ZKcprDu6KQdb1hoAs5gH8P6zf6A3r-Kr9cgzytG1kRHDjrlIS1zp3ty-ju5SXnenituJhF3BrO2RDk4S1-RrWDVl7YYK2HS9cERCU" />
+                        src="./assets/images/services_img_1.jpg" />
                 </div>
             </div>
         </section>
@@ -148,7 +148,7 @@ Login
                     class="md:col-span-6 relative h-[500px] rounded-xl overflow-hidden ambient-shadow-md hidden md:block">
                     <img alt="Data dashboard interface" class="w-full h-full object-cover"
                         data-alt="A close-up, angled view of a sophisticated software dashboard displayed on a high-resolution monitor. The interface features sleek charts, data tables, and metrics utilizing a modern color palette of deep navy, clean white, and vibrant electric blue accents. The lighting is soft and professional, emphasizing the precision and high-end nature of the enterprise application design."
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjxUYSSYxhczanCr-5bCDkOWM2T5-SetTP0JfpZ7TmuL1v2wwOPnWZfsWVmSGJM5JUcU2CKPTBn410Xn-wlQ0ihmYjWIBZ9S0t0BNE7VANKH13rTmRWtnSwAotbf1IXpd-vBskvc1aNNfy0fwxB-ar-NWLIMaC5ywt1JTDjNdv8I-e08kkH8ZeEn2MtNExz4edqmhqOi8IAxh3VZWeQkG501YzVmPI7fDipt8qcNof0RXkrMWkQ9FXWbCTG700MaLZKWzWmUgSSoQ" />
+                        src="./assets/images/services_img_2.jpg" />
                 </div>
                 <div class="md:col-span-6 flex flex-col gap-lg md:pl-lg">
                     <div class="flex flex-col gap-sm">

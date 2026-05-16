@@ -26,18 +26,18 @@
 </head>
 <body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
 <!-- TopNavBar Component -->
-<header class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-md border-b border-outline-variant/10 fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
-<div class="flex items-center gap-xl">
+<header class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-md dark:shadow-[0_4px_20px_rgba(0,0,0,0.6)] border-b border-outline-variant/10 dark:border-transparent fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
+<div class="flex items-center gap-xl h-full">
 <a class="flex items-center gap-sm" href="index.html">
 <img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo.svg"/>
 <img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo_dark.svg"/>
 <span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-inverse-primary hidden">Scalland</span>
 </a>
-<nav class="hidden md:flex items-center gap-sm bg-surface-container-low/50 border border-outline-variant/20 rounded-full p-1 backdrop-blur-md">
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="index.html">Home</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="services.html">Services</a>
-<a class="font-label-lg text-label-lg bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full font-semibold shadow-sm transition-all duration-200" href="aboutus.html">About Us</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-highest px-4 py-1.5 rounded-full transition-all duration-200" href="contactus.html">Contact</a>
+<nav class="hidden md:flex items-center h-full border-r border-outline-variant/20 dark:border-white/5">
+<a class="font-label-lg text-label-lg h-full flex items-center px-6 border-l border-outline-variant/20 dark:border-white/5 border-b-2 border-transparent focus:outline-none text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="index.html">Home</a>
+<a class="font-label-lg text-label-lg h-full flex items-center px-6 border-l border-outline-variant/20 dark:border-white/5 border-b-2 border-transparent focus:outline-none text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="services.html">Services</a>
+<a class="font-label-lg text-label-lg h-full flex items-center px-6 border-l border-transparent focus:outline-none bg-gradient-to-b from-[#0A192F] to-[#003B5C] text-white font-semibold transition-colors" href="aboutus.html">About Us</a>
+<a class="font-label-lg text-label-lg h-full flex items-center px-6 border-l border-outline-variant/20 dark:border-white/5 border-b-2 border-transparent focus:outline-none text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="contactus.html">Contact</a>
 </nav>
 </div>
 <div class="flex items-center gap-md">
@@ -72,7 +72,7 @@ Login
 </div>
 <div class="lg:col-span-7 relative">
 <div class="absolute inset-0 bg-gradient-to-tr from-surface to-transparent z-10"></div>
-<img class="w-full h-[600px] object-cover rounded-xl shadow-lg" data-alt="A striking, high-contrast photograph of a modern glass skyscraper reflecting a bright, cloudless sky. The architecture implies stability and forward momentum, aligning with a corporate consultancy aesthetic. The lighting is crisp and natural, emphasizing the pristine white and deep navy tones of the building's facade. Subtle electric blue reflections hint at technological innovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX108lY0WDrN0e3PdstEJ42FZAEow8gk0LJ7dVNWFS8LRHbu8XsUdAvzRDrt2ZKsOeg_rgD-YslUsFkAqe-YPmnbjLnZHR42t7bmp5JksEdT1mKPPIpj9W3KD2ou6EWm43wsEItFApb17aieUyn8Cn-yNRkAsnMLNiHI3dZrycbZRN1QA0JgxulLQoQAlpDTRQxXnPV_68ZZEE3_IEBLBHdkNWl2-SfyT12cv849_ldTAmAgStpCNeyczFmaPFhsFlzaih4wr5w9U"/>
+<img class="w-full h-[600px] object-cover rounded-xl shadow-lg" data-alt="A striking, high-contrast photograph of a modern glass skyscraper reflecting a bright, cloudless sky. The architecture implies stability and forward momentum, aligning with a corporate consultancy aesthetic. The lighting is crisp and natural, emphasizing the pristine white and deep navy tones of the building's facade. Subtle electric blue reflections hint at technological innovation." src="./assets/images/about_hero.jpg"/>
 </div>
 </div>
 </section>
@@ -94,8 +94,8 @@ Login
                     </p>
 </div>
 <!-- Value Card 2 -->
-<div class="bg-surface-container-lowest p-lg rounded-lg shadow-sm border-t-[4px] border-primary-container flex flex-col gap-sm h-full">
-<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container mb-sm">
+<div class="bg-surface-container-lowest p-lg rounded-lg shadow-sm border-t-[4px] border-primary-container dark:border-primary flex flex-col gap-sm h-full">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container dark:text-primary mb-sm">
 <span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
 </div>
 <h3 class="font-headline-md text-headline-md text-primary">Empirical Precision</h3>
@@ -130,7 +130,7 @@ Login
 </div>
 </div>
 <div class="md:w-1/2 h-[400px] md:h-auto relative">
-<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sophisticated, well-lit boardroom table featuring blurred figures in deep navy suits engaged in a strategic discussion. The focus is on a sleek, open laptop in the foreground, displaying complex data charts with electric blue highlights. The atmosphere is professional, authoritative, and deeply collaborative, emphasizing trust and enterprise expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsUTS0eg87pnsfEnCFgEWNKuM-jFd3XhqTKvKKUdsqf33eyezr_u3LADpyaBSaoipHrFNjYxBcGtUuAxEvw9YbJSx5VUjf2_ktCDUn5zBdfbF7036XWNHPsWv0uqt2XMHmwLJxqwy38yV43bnJSTU4i9RZXfmNdUtU9KRymCEwAGvm4aITKW_VNTnwT9aIgqycBHcc_61w6cXX4dHgsgJ-qkIl9uzYXKbj9iugVaK-8ZuCsVYWeE5kN7rKfk2yUwWQ67znrwhxK6U"/>
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sophisticated, well-lit boardroom table featuring blurred figures in deep navy suits engaged in a strategic discussion. The focus is on a sleek, open laptop in the foreground, displaying complex data charts with electric blue highlights. The atmosphere is professional, authoritative, and deeply collaborative, emphasizing trust and enterprise expertise." src="./assets/images/about_boardroom.jpg"/>
 <div class="absolute inset-0 bg-primary-container/20 mix-blend-multiply"></div>
 </div>
 </div>
@@ -147,7 +147,7 @@ Login
 <!-- Team Member 1 -->
 <div class="group cursor-pointer">
 <div class="relative overflow-hidden rounded-lg mb-md bg-surface-container-low aspect-[3/4]">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional corporate headshot of a middle-aged male executive in a deep navy suit and crisp white shirt. He exudes confidence and competence. The background is a slightly blurred modern office space with subtle natural lighting. The overall color palette is cool and authoritative, utilizing high-contrast lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxFLATPqWACv5WIyP4ArWH8IcuiLvsNgOqQPKlkjMxTVccdposltpQasz3PHzltPHOsVhySY7YBtoLy7P-sliKGGykJ43UziutmYON_QFS3zeaY2tTuUz1u7WjqTiEzkXlv1ZQiWtLEdMBOJxL4uuHrtaq2xH1jolWI7l3X-1hbJE3KZrHF7S4e6TvlDDpawFkoXW-wMZCtXrAhfWvUeZQVC53w4iFG__xPT9TQ5XQGLtYi4cryMkerQI35WFNb0BJxojuoSS-Muk"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional corporate headshot of a middle-aged male executive in a deep navy suit and crisp white shirt. He exudes confidence and competence. The background is a slightly blurred modern office space with subtle natural lighting. The overall color palette is cool and authoritative, utilizing high-contrast lighting." src="./assets/images/about_team_1.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md">
 <span class="material-symbols-outlined text-white" data-icon="arrow_forward">arrow_forward</span>
 </div>
@@ -158,7 +158,7 @@ Login
 <!-- Team Member 2 -->
 <div class="group cursor-pointer">
 <div class="relative overflow-hidden rounded-lg mb-md bg-surface-container-low aspect-[3/4]">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional corporate headshot of a female executive with a composed, intelligent expression. She is wearing a modern, structured blazer in a neutral tone. The setting is a bright, contemporary corporate environment with soft, high-key lighting. The image conveys sharp intellect and approachability within a high-stakes business context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFpgbIgcwZndIEFS4VliVIBfCUnTkb1JLdOaECS0Ks7aUNvwXWoVOPi_BJNa8_iAxiuhvjKHUk_t_Vl-6lYqthg9NOhfcbqucvaWBM5dE4dR33SVISCTjXnmJ3e4HrW7Qsl9yzlBidQy8sZJHfWTJdpBYxnYnQDcEhGdb4pSc0zypkpTC-Izwy8Bxn9TwfIsTSEfDKCZGCyuvBfpakUH4dlxp4GqmVLtr1zFlwN0K88_QcD1qTPkQiSyy88vQrrqe8J84AwwDRa6U"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional corporate headshot of a female executive with a composed, intelligent expression. She is wearing a modern, structured blazer in a neutral tone. The setting is a bright, contemporary corporate environment with soft, high-key lighting. The image conveys sharp intellect and approachability within a high-stakes business context." src="./assets/images/about_team_2.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md">
 <span class="material-symbols-outlined text-white" data-icon="arrow_forward">arrow_forward</span>
 </div>
@@ -169,7 +169,7 @@ Login
 <!-- Team Member 3 -->
 <div class="group cursor-pointer">
 <div class="relative overflow-hidden rounded-lg mb-md bg-surface-container-low aspect-[3/4]">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a senior male consultant standing in a modern, glass-walled office. He is dressed sharply in a tailored suit, looking directly at the camera with a reassuring, authoritative gaze. The lighting is crisp and cool, highlighting the polished, high-end corporate aesthetic of the surrounding environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaDXXX60TJ6hHngf-TAJfEpvR_FBEGfkq_5QZj3VatSWJgiv-uBtGV6Vo9-YCTJUNViMSk-IXeFjmq89XFrpi1qRJPK9HVtAU6NjXzSGEYfLy1BtcJqD4jg8m-EtBER8GGyL2JNwyApf402Ia7LMFGncQ0FlTXY16UmTvdsgB4UB2n6rUbPKExoelUm3QGuTWDnkpJxT6PfbM2CG2SxSbeySBWH9ArryFVzVIDiple1TEBJjv6OJJeUC_YD6dCgwzHDafoUSu1n4I"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a senior male consultant standing in a modern, glass-walled office. He is dressed sharply in a tailored suit, looking directly at the camera with a reassuring, authoritative gaze. The lighting is crisp and cool, highlighting the polished, high-end corporate aesthetic of the surrounding environment." src="./assets/images/about_team_3.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md">
 <span class="material-symbols-outlined text-white" data-icon="arrow_forward">arrow_forward</span>
 </div>
