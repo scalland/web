@@ -32,7 +32,7 @@ Databases:
 
 OTP:
   length: 6
-  otp_type: "num"
+  otp_type: "num" # One of num, hex, complex, alnum
   valid_till: 120
 
 SMTPs:

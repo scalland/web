@@ -34,6 +34,22 @@ func GenerateNumericOTP(length int) string {
 	return GenerateOTP(length, OTPNumeric)
 }
 
+// GenerateOTPByType generates an OTP based on the specified type.
+func GenerateOTPByType(length int, otpType string) string {
+	switch otpType {
+	case "num":
+		return GenerateOTP(length, OTPNumeric)
+	case "hex":
+		return GenerateOTP(length, OTPHex)
+	case "complex":
+		return GenerateOTP(length, OTPComplex)
+	case "alnum":
+		return GenerateOTP(length, OTPAlphaNum)
+	default:
+		return GenerateOTP(length, OTPAlphaNum)
+	}
+}
+
 // HashString returns the SHA-256 hex hash of a string.
 func HashString(s string) string {
 	h := sha256.Sum256([]byte(s))

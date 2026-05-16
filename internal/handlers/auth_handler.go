@@ -32,7 +32,7 @@ func (h *WebHandlers) SendOTPHandler(c *gin.Context) {
 	}
 
 	u := h.Utils
-	otp := utils.GenerateAlNumOTP(u.Config.OTP.Length)
+	otp := utils.GenerateOTPByType(u.Config.OTP.Length, u.Config.OTP.OTPType)
 
 	// Store OTP hash in DB
 	otpHash := utils.HashString(otp)
