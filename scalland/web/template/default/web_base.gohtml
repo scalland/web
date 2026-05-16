@@ -1,0 +1,16 @@
+{{define "base"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{template "head" .}}
+</head>
+<body>
+    {{template "navbar" .}}
+    <main class="container">
+        {{template "content" .}}
+    </main>
+    {{template "footer" .}}
+    {{template "scripts" .}}
+</body>
+</html>
+{{end}}

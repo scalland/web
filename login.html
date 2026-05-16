@@ -28,13 +28,13 @@
         }
       </style>
 <style data-stitch-cursor=""></style><style data-stitch-scroll-lock=""></style></head>
-<body class="bg-background min-h-screen flex items-center justify-center p-margin-mobile md:p-margin-desktop relative overflow-hidden text-on-background">
+<body class="bg-background min-h-screen flex flex-col relative overflow-x-hidden overflow-y-auto text-on-background">
 <!-- TopNavBar Component -->
-<header class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-md dark:shadow-[0_4px_20px_rgba(0,0,0,0.6)] border-b border-outline-variant/10 dark:border-transparent fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
+<header class="bg-surface/80 backdrop-blur-md shadow-md dark:shadow-[0_4px_20px_rgba(0,0,0,0.6)] border-b border-outline-variant/10 dark:border-white/5 dark:border-transparent fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
 <div class="flex items-center gap-xl h-full">
 <a class="flex items-center gap-sm" href="index.html">
-<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo.svg"/>
-<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo_dark.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo_dark.svg"/>
 <span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-inverse-primary hidden">Scalland</span>
 </a>
 <nav class="hidden md:flex items-center h-full border-r border-outline-variant/20 dark:border-white/5">
@@ -56,8 +56,38 @@
 <span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
 </button>
 </div>
+<button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface-variant hover:text-primary rounded-full transition-all flex items-center justify-center">
+<span class="material-symbols-outlined">menu</span>
+</button>
 </div>
 </header>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden fixed top-20 left-0 w-full bg-surface border-b border-outline-variant/10 dark:border-white/5 z-40 shadow-md flex flex-col">
+<nav class="flex flex-col">
+<a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 text-on-surface-variant hover:text-primary font-semibold" href="index.html">Home</a>
+<a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 text-on-surface-variant hover:text-primary font-semibold" href="services.html">Services</a>
+<a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 text-on-surface-variant hover:text-primary font-semibold" href="aboutus.html">About Us</a>
+<a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 text-on-surface-variant hover:text-primary font-semibold" href="contactus.html">Contact</a>
+</nav>
+<div class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5">
+<button class="w-full bg-surface-container-highest dark:bg-white/5 text-primary hover:opacity-90 transition-all font-label-lg text-label-lg py-sm rounded-DEFAULT shadow-sm" onclick="window.location.href='login.html'">
+Login
+</button>
+</div>
+<div class="flex items-center gap-4 p-margin-mobile">
+<button id="mobile-theme-toggle" class="p-2 bg-surface-container-highest dark:bg-white/5 text-primary rounded-full flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+<button class="p-2 bg-surface-container-highest dark:bg-white/5 text-primary rounded-full flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="p-2 bg-surface-container-highest dark:bg-white/5 text-primary rounded-full flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+
+<main class="flex-grow flex flex-col items-center justify-center px-margin-mobile pt-28 pb-12 md:p-margin-desktop w-full relative z-10">
 <!-- Ambient background gradient -->
 
 <div class="absolute inset-0 bg-gradient-to-br from-surface to-surface-variant opacity-50 z-0"></div>
@@ -68,8 +98,8 @@
 <!-- Header -->
 <div class="text-center mb-xl">
 <h1 class="font-headline-lg text-headline-lg text-primary mb-sm">
-<img alt="Scalland" class="h-10 mx-auto dark:hidden" src="./assets/images/scalland_final_logo.svg"/>
-<img alt="Scalland" class="h-10 mx-auto hidden dark:block" src="./assets/images/scalland_final_logo_dark.svg"/>
+<img alt="Scalland" class="h-10 mx-auto dark:hidden" src="./static/img/scalland_final_logo.svg"/>
+<img alt="Scalland" class="h-10 mx-auto hidden dark:block" src="./static/img/scalland_final_logo_dark.svg"/>
 </h1>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Secure Enterprise Access</p>
 </div>
@@ -106,13 +136,30 @@
 </form>
 <!-- Footer Links -->
 <div class="mt-xl flex flex-col items-center gap-sm pt-md border-t border-outline-variant/20">
-<img alt="Scalland" class="h-8 opacity-60 mb-sm dark:hidden" src="./assets/images/scalland_final_logo.svg"/>
-<img alt="Scalland" class="h-8 opacity-60 mb-sm hidden dark:block" src="./assets/images/scalland_final_logo_dark.svg"/>
+<img alt="Scalland" class="h-8 opacity-60 mb-sm dark:hidden" src="./static/img/scalland_final_logo.svg"/>
+<img alt="Scalland" class="h-8 opacity-60 mb-sm hidden dark:block" src="./static/img/scalland_final_logo_dark.svg"/>
 <p class="font-body-sm text-body-sm text-on-surface-variant text-center">
                 Need help accessing your account? <br/> Contact your IT administrator.
             </p>
 </div>
 </div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-xl px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-md bg-surface border-t border-outline-variant/20 mt-auto relative z-20">
+<div class="flex items-center">
+<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo_dark.svg"/>
+<span class="font-headline-md text-headline-md text-primary dark:text-inverse-primary hidden">Scalland</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">
+            © 2024 Scalland Consultancy Services. All rights reserved.
+        </div>
+<div class="flex flex-wrap justify-center gap-md font-label-sm text-label-sm">
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-all" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-all" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-all" href="#">Cookie Policy</a>
+</div>
+</footer>
 <script>
     const themeToggleBtn = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
@@ -134,5 +181,28 @@
             }
         });
     }
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if(mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+            icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+    }
+    const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+    if(mobileThemeToggle) {
+        mobileThemeToggle.addEventListener('click', () => {
+            const themeBtn = document.getElementById('theme-toggle');
+            if(themeBtn) themeBtn.click();
+            const icon = mobileThemeToggle.querySelector('.material-symbols-outlined');
+            icon.textContent = document.documentElement.classList.contains('dark') ? 'light_mode' : 'dark_mode';
+        });
+    }
+});
 </script>
 </body></html>

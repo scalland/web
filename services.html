@@ -35,11 +35,11 @@
 
 <body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col pt-20">
 <!-- TopNavBar Component -->
-<header class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-md dark:shadow-[0_4px_20px_rgba(0,0,0,0.6)] border-b border-outline-variant/10 dark:border-transparent fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
+<header class="bg-surface/80 backdrop-blur-md shadow-md dark:shadow-[0_4px_20px_rgba(0,0,0,0.6)] border-b border-outline-variant/10 dark:border-white/5 dark:border-transparent fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
 <div class="flex items-center gap-xl h-full">
 <a class="flex items-center gap-sm" href="index.html">
-<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo.svg"/>
-<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo_dark.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo_dark.svg"/>
 <span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-inverse-primary hidden">Scalland</span>
 </a>
 <nav class="hidden md:flex items-center h-full border-r border-outline-variant/20 dark:border-white/5">
@@ -61,11 +61,40 @@
 <span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
 </button>
 </div>
-<button class="bg-primary text-on-primary hover:opacity-90 transition-all font-label-lg text-label-lg px-lg py-sm rounded-DEFAULT shadow-sm" onclick="window.location.href='login.html'">
+<button class="hidden md:block bg-surface-container-highest dark:bg-white/5 text-primary hover:opacity-90 transition-all font-label-lg text-label-lg px-lg py-sm rounded-DEFAULT shadow-sm" onclick="window.location.href='login.html'">
 Login
+</button>
+<button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface-variant hover:text-primary rounded-full transition-all flex items-center justify-center">
+<span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </header>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden fixed top-20 left-0 w-full bg-surface border-b border-outline-variant/10 dark:border-white/5 z-40 shadow-md flex flex-col">
+<nav class="flex flex-col">
+<a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 text-on-surface-variant hover:text-primary font-semibold" href="index.html">Home</a>
+<a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 text-white bg-gradient-to-r from-[#0A192F] to-[#003B5C] font-semibold" href="services.html">Services</a>
+<a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 text-on-surface-variant hover:text-primary font-semibold" href="aboutus.html">About Us</a>
+<a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 text-on-surface-variant hover:text-primary font-semibold" href="contactus.html">Contact</a>
+</nav>
+<div class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5">
+<button class="w-full bg-surface-container-highest dark:bg-white/5 text-primary hover:opacity-90 transition-all font-label-lg text-label-lg py-sm rounded-DEFAULT shadow-sm" onclick="window.location.href='login.html'">
+Login
+</button>
+</div>
+<div class="flex items-center gap-4 p-margin-mobile">
+<button id="mobile-theme-toggle" class="p-2 bg-surface-container-highest dark:bg-white/5 text-primary rounded-full flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+<button class="p-2 bg-surface-container-highest dark:bg-white/5 text-primary rounded-full flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="p-2 bg-surface-container-highest dark:bg-white/5 text-primary rounded-full flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+
     <!-- Main Content Canvas -->
     <main class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop w-full overflow-hidden flex-grow">
         <!-- Hero Section -->
@@ -93,7 +122,7 @@ Login
                     </div>
                     <img alt="Abstract digital network visualization" class="w-full h-full object-cover"
                         data-alt="A highly complex digital network visualization rendered in high resolution. The image features a web of glowing white and electric blue nodes connected by thin, luminous lines over a deep navy background. The aesthetic is extremely modern, corporate, and abstract, symbolizing data flow, cloud orchestration, and high-tech infrastructure in a premium enterprise context."
-                        src="./assets/images/services_img_1.jpg" />
+                        src="./static/img/services_img_1.jpg" />
                 </div>
             </div>
         </section>
@@ -148,7 +177,7 @@ Login
                     class="md:col-span-6 relative h-[500px] rounded-xl overflow-hidden ambient-shadow-md hidden md:block">
                     <img alt="Data dashboard interface" class="w-full h-full object-cover"
                         data-alt="A close-up, angled view of a sophisticated software dashboard displayed on a high-resolution monitor. The interface features sleek charts, data tables, and metrics utilizing a modern color palette of deep navy, clean white, and vibrant electric blue accents. The lighting is soft and professional, emphasizing the precision and high-end nature of the enterprise application design."
-                        src="./assets/images/services_img_2.jpg" />
+                        src="./static/img/services_img_2.jpg" />
                 </div>
                 <div class="md:col-span-6 flex flex-col gap-lg md:pl-lg">
                     <div class="flex flex-col gap-sm">
@@ -241,8 +270,8 @@ Login
 <!-- Footer Component -->
 <footer class="w-full py-xl px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-md bg-surface border-t border-outline-variant/20 mt-xl">
 <div class="flex items-center">
-<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo.svg"/>
-<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo_dark.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo_dark.svg"/>
 <span class="font-headline-md text-headline-md text-primary dark:text-inverse-primary hidden">Scalland</span>
 </div>
 <div class="font-body-sm text-body-sm text-on-surface-variant">
@@ -275,6 +304,29 @@ Login
             }
         });
     }
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if(mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+            icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+    }
+    const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+    if(mobileThemeToggle) {
+        mobileThemeToggle.addEventListener('click', () => {
+            const themeBtn = document.getElementById('theme-toggle');
+            if(themeBtn) themeBtn.click();
+            const icon = mobileThemeToggle.querySelector('.material-symbols-outlined');
+            icon.textContent = document.documentElement.classList.contains('dark') ? 'light_mode' : 'dark_mode';
+        });
+    }
+});
 </script>
 </body>
 </html>

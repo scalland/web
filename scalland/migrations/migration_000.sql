@@ -1,0 +1,25 @@
+-- Migration 000: Create core tables
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    role VARCHAR(50) NOT NULL DEFAULT 'user',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS otp_requests (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(255) NOT NULL,
+    otp_hash VARCHAR(64) NOT NULL,
+    used TINYINT(1) NOT NULL DEFAULT 0,
+    expires_at DATETIME NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_email_hash (email, otp_hash),
+    INDEX idx_expires (expires_at)
+);
+
+CREATE TABLE IF NOT EXISTS schema_migrations (
+    version INT NOT NULL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    applied_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

@@ -26,11 +26,11 @@
 </head>
 <body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
 <!-- TopNavBar Component -->
-<header class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-md dark:shadow-[0_4px_20px_rgba(0,0,0,0.6)] border-b border-outline-variant/10 dark:border-transparent fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
+<header class="bg-surface/80 backdrop-blur-md shadow-md dark:shadow-[0_4px_20px_rgba(0,0,0,0.6)] border-b border-outline-variant/10 dark:border-white/5 dark:border-transparent fixed top-0 w-full z-50 flex justify-between items-center h-20 px-margin-desktop max-w-[1440px] left-1/2 -translate-x-1/2">
 <div class="flex items-center gap-xl h-full">
 <a class="flex items-center gap-sm" href="index.html">
-<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo.svg"/>
-<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo_dark.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo_dark.svg"/>
 <span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-inverse-primary hidden">Scalland</span>
 </a>
 <nav class="hidden md:flex items-center h-full border-r border-outline-variant/20 dark:border-white/5">
@@ -52,11 +52,40 @@
 <span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
 </button>
 </div>
-<button class="bg-primary text-on-primary hover:opacity-90 transition-all font-label-lg text-label-lg px-lg py-sm rounded-DEFAULT shadow-sm" onclick="window.location.href='login.html'">
+<button class="hidden md:block bg-surface-container-highest dark:bg-white/5 text-primary hover:opacity-90 transition-all font-label-lg text-label-lg px-lg py-sm rounded-DEFAULT shadow-sm" onclick="window.location.href='login.html'">
 Login
+</button>
+<button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface-variant hover:text-primary rounded-full transition-all flex items-center justify-center">
+<span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </header>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden fixed top-20 left-0 w-full bg-surface border-b border-outline-variant/10 dark:border-white/5 z-40 shadow-md flex flex-col">
+<nav class="flex flex-col">
+<a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 text-on-surface-variant hover:text-primary font-semibold" href="index.html">Home</a>
+<a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 text-on-surface-variant hover:text-primary font-semibold" href="services.html">Services</a>
+<a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 text-white bg-gradient-to-r from-[#0A192F] to-[#003B5C] font-semibold" href="aboutus.html">About Us</a>
+<a class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5 text-on-surface-variant hover:text-primary font-semibold" href="contactus.html">Contact</a>
+</nav>
+<div class="px-margin-mobile py-4 border-b border-outline-variant/10 dark:border-white/5">
+<button class="w-full bg-surface-container-highest dark:bg-white/5 text-primary hover:opacity-90 transition-all font-label-lg text-label-lg py-sm rounded-DEFAULT shadow-sm" onclick="window.location.href='login.html'">
+Login
+</button>
+</div>
+<div class="flex items-center gap-4 p-margin-mobile">
+<button id="mobile-theme-toggle" class="p-2 bg-surface-container-highest dark:bg-white/5 text-primary rounded-full flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+<button class="p-2 bg-surface-container-highest dark:bg-white/5 text-primary rounded-full flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="p-2 bg-surface-container-highest dark:bg-white/5 text-primary rounded-full flex items-center justify-center w-10 h-10">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+
 <main class="pt-32 pb-xl">
 <!-- Hero Section -->
 <section class="max-w-[1440px] mx-auto px-margin-desktop mb-xl">
@@ -72,7 +101,7 @@ Login
 </div>
 <div class="lg:col-span-7 relative">
 <div class="absolute inset-0 bg-gradient-to-tr from-surface to-transparent z-10"></div>
-<img class="w-full h-[600px] object-cover rounded-xl shadow-lg" data-alt="A striking, high-contrast photograph of a modern glass skyscraper reflecting a bright, cloudless sky. The architecture implies stability and forward momentum, aligning with a corporate consultancy aesthetic. The lighting is crisp and natural, emphasizing the pristine white and deep navy tones of the building's facade. Subtle electric blue reflections hint at technological innovation." src="./assets/images/about_hero.jpg"/>
+<img class="w-full h-[600px] object-cover rounded-xl shadow-lg" data-alt="A striking, high-contrast photograph of a modern glass skyscraper reflecting a bright, cloudless sky. The architecture implies stability and forward momentum, aligning with a corporate consultancy aesthetic. The lighting is crisp and natural, emphasizing the pristine white and deep navy tones of the building's facade. Subtle electric blue reflections hint at technological innovation." src="./static/img/about_hero.jpg"/>
 </div>
 </div>
 </section>
@@ -130,7 +159,7 @@ Login
 </div>
 </div>
 <div class="md:w-1/2 h-[400px] md:h-auto relative">
-<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sophisticated, well-lit boardroom table featuring blurred figures in deep navy suits engaged in a strategic discussion. The focus is on a sleek, open laptop in the foreground, displaying complex data charts with electric blue highlights. The atmosphere is professional, authoritative, and deeply collaborative, emphasizing trust and enterprise expertise." src="./assets/images/about_boardroom.jpg"/>
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sophisticated, well-lit boardroom table featuring blurred figures in deep navy suits engaged in a strategic discussion. The focus is on a sleek, open laptop in the foreground, displaying complex data charts with electric blue highlights. The atmosphere is professional, authoritative, and deeply collaborative, emphasizing trust and enterprise expertise." src="./static/img/about_boardroom.jpg"/>
 <div class="absolute inset-0 bg-primary-container/20 mix-blend-multiply"></div>
 </div>
 </div>
@@ -147,7 +176,7 @@ Login
 <!-- Team Member 1 -->
 <div class="group cursor-pointer">
 <div class="relative overflow-hidden rounded-lg mb-md bg-surface-container-low aspect-[3/4]">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional corporate headshot of a middle-aged male executive in a deep navy suit and crisp white shirt. He exudes confidence and competence. The background is a slightly blurred modern office space with subtle natural lighting. The overall color palette is cool and authoritative, utilizing high-contrast lighting." src="./assets/images/about_team_1.jpg"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional corporate headshot of a middle-aged male executive in a deep navy suit and crisp white shirt. He exudes confidence and competence. The background is a slightly blurred modern office space with subtle natural lighting. The overall color palette is cool and authoritative, utilizing high-contrast lighting." src="./static/img/about_team_1.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md">
 <span class="material-symbols-outlined text-white" data-icon="arrow_forward">arrow_forward</span>
 </div>
@@ -158,7 +187,7 @@ Login
 <!-- Team Member 2 -->
 <div class="group cursor-pointer">
 <div class="relative overflow-hidden rounded-lg mb-md bg-surface-container-low aspect-[3/4]">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional corporate headshot of a female executive with a composed, intelligent expression. She is wearing a modern, structured blazer in a neutral tone. The setting is a bright, contemporary corporate environment with soft, high-key lighting. The image conveys sharp intellect and approachability within a high-stakes business context." src="./assets/images/about_team_2.jpg"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional corporate headshot of a female executive with a composed, intelligent expression. She is wearing a modern, structured blazer in a neutral tone. The setting is a bright, contemporary corporate environment with soft, high-key lighting. The image conveys sharp intellect and approachability within a high-stakes business context." src="./static/img/about_team_2.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md">
 <span class="material-symbols-outlined text-white" data-icon="arrow_forward">arrow_forward</span>
 </div>
@@ -169,7 +198,7 @@ Login
 <!-- Team Member 3 -->
 <div class="group cursor-pointer">
 <div class="relative overflow-hidden rounded-lg mb-md bg-surface-container-low aspect-[3/4]">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a senior male consultant standing in a modern, glass-walled office. He is dressed sharply in a tailored suit, looking directly at the camera with a reassuring, authoritative gaze. The lighting is crisp and cool, highlighting the polished, high-end corporate aesthetic of the surrounding environment." src="./assets/images/about_team_3.jpg"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a senior male consultant standing in a modern, glass-walled office. He is dressed sharply in a tailored suit, looking directly at the camera with a reassuring, authoritative gaze. The lighting is crisp and cool, highlighting the polished, high-end corporate aesthetic of the surrounding environment." src="./static/img/about_team_3.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-md">
 <span class="material-symbols-outlined text-white" data-icon="arrow_forward">arrow_forward</span>
 </div>
@@ -193,8 +222,8 @@ Login
 <!-- Footer Component -->
 <footer class="w-full py-xl px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-md bg-surface border-t border-outline-variant/20 mt-xl">
 <div class="flex items-center">
-<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo.svg"/>
-<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./assets/images/scalland_final_logo_dark.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain dark:hidden" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo.svg"/>
+<img alt="Scalland Logo" class="h-8 w-auto object-contain hidden dark:block" onerror="this.style.display='none'; this.parentElement.querySelector('span').style.display='block';" src="./static/img/scalland_final_logo_dark.svg"/>
 <span class="font-headline-md text-headline-md text-primary dark:text-inverse-primary hidden">Scalland</span>
 </div>
 <div class="font-body-sm text-body-sm text-on-surface-variant">
@@ -227,5 +256,28 @@ Login
             }
         });
     }
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if(mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+            icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+    }
+    const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+    if(mobileThemeToggle) {
+        mobileThemeToggle.addEventListener('click', () => {
+            const themeBtn = document.getElementById('theme-toggle');
+            if(themeBtn) themeBtn.click();
+            const icon = mobileThemeToggle.querySelector('.material-symbols-outlined');
+            icon.textContent = document.documentElement.classList.contains('dark') ? 'light_mode' : 'dark_mode';
+        });
+    }
+});
 </script>
 </body></html>

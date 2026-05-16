@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: deployments/Dockerfile
+    ports:
+      - "0:0"
+    volumes:
+      - ../configs:/configs
+      - ../storage:/storage
+    environment:
+      - _APP_SERVERPORT=0
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: _db
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
